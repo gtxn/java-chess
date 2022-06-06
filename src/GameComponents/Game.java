@@ -132,12 +132,10 @@ public class Game implements MouseListener {
                 int oldCol = board.getCurrentSelectedPieceCoords()[1];
 
                 if (oldCol - col == 2 && kingPiece.getLrAvailCastle()[0]) {
-                    System.out.println("left castle");
                     kingPiece.setLrDidCastle(new boolean[] {true, false});
                     board.movePiece(7, 3, 7, 0);
                 }
                 else if (col - oldCol == 2 && kingPiece.getLrAvailCastle()[1]) {
-                    System.out.println("right castle");
                     kingPiece.setLrDidCastle(new boolean[] {false, true});
                     board.movePiece(7, 5, 7, 7);
                 }

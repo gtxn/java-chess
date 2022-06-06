@@ -9,8 +9,6 @@ import java.util.ArrayList;
 public class WallOfShame extends JPanel {
     private Game game;
     private final int whiteStartPoint = Board.DIMENSIONS / 2;
-    private final int blackStartPoint = (Board.BOARDWIDTH + 1) * Board.DIMENSIONS / 2;
-    private final int textWidth = 100;
     private final int textHeight = 20;
     private final int piecesWidth = (Board.DIMENSIONS / 2) * 6;
     private final int onePieceWidth = Board.DIMENSIONS / 2;
